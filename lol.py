@@ -35,17 +35,17 @@ def update_lines(strip):
     return True
 
 
-strip.begin()
-
-try:
-    send_line()
-    while(True):
-        time.sleep(0.01)
-        if not update_lines(strip):
-            break
-        if heads[-1] == 30:
-            send_line()
-
-except KeyboardInterrupt:
-    clear_lights(strip)
+#strip.begin()
+#
+#try:
+#    send_line()
+#    while(True):
+#        time.sleep(0.01)
+#        if not update_lines(strip):
+#            break
+#        if heads[-1] == 30:
+#            send_line()
+#
+#except KeyboardInterrupt:
+#    clear_lights(strip)
 
